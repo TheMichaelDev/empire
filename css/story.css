@@ -1,0 +1,259 @@
+@font-face {
+    font-family: "Comfortaa";
+    font-display: swap;
+    src: local("Comfortaa"),
+         url("../fonts/Comfortaa.woff") format("woff"), 
+         url("../fonts/Comfortaa.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Comfortaa-B";
+    font-display: swap;
+    src: local("Comfortaa"),
+         url("../fonts/Comfortaa-Bold.woff") format("woff"), 
+         url("../fonts/Comfortaa-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-display: swap;
+    src: local("Montserrat"),
+         url("../fonts/Montserrat.woff") format("woff"), 
+         url("../fonts/Montserrat.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background-color: #808080;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.5em;
+    background-color: #151719;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Header styles */
+
+#header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #151719;
+}
+
+#nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-menu__item {
+    display: block;
+    font-family: "Comfortaa";
+    font-size: 20px;
+    padding: 20px 50px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    transition: .25s ease;
+}
+
+.nav-menu__item:hover {
+    background-color: #2c3036;
+    transition: .25s ease;
+}
+
+/* Header styles */
+
+
+/* Main styles */
+
+#main {
+    width: 100%;
+    max-width: 1170px;
+    padding: 0 40px 0 40px;
+    margin: 0 auto;
+}
+
+#main-title {
+    padding-top: 80px;
+}
+
+.title {
+    font-family: "Comfortaa";
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.2em;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.paragraph {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8em;
+    text-indent: 1.5em;
+    padding-bottom: .75em;
+}
+
+.img {
+    max-width: 100%;
+    padding-bottom: .75em;
+}
+
+#book-link {
+    text-decoration: none;
+    color: #42aaff;
+}
+
+#book-link:active {
+    color: #f3c82e;
+}
+
+#iframe {
+    width: 560px;
+    height: 315px;
+    padding-bottom: .75em;
+}
+
+#notes {
+    margin-left: auto; 
+    max-width: 700px;
+    padding: 40px 0 60px 0;
+}
+
+.note {
+    font-family: "Montserrat";
+    font-size: 14px;
+    text-align: right;
+}
+
+#first-note {
+    padding-top: 60px;
+}
+
+#note__link {
+    text-decoration: none;
+    color: #42aaff;
+}
+
+#note__link:active {
+    color: #f3c82e;
+}
+
+/* Main styles */
+
+
+/* Footer styles */
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #151719;
+}
+
+#footer__link-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "Comfortaa";
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.footer__link-box-item {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 0 10px;
+    transition: .25s ease-in-out;
+}
+
+.footer__link-box-item:hover {
+    color: #f3c82e;
+    transition: .25s ease-in-out;
+}
+
+.footer__link-box-item:last-child {
+    margin-right: 0;
+}
+
+#footer__arp-box {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+#footer__arp-logo {
+    filter: grayscale(100%);
+    width: 100%;
+    transition: .25s ease-in-out;
+}
+
+#footer__arp-logo:hover {
+    filter: none;
+    transition: .25s ease-in-out;
+}
+
+/* Footer styles */
+
+
+/* Media queries */
+
+@media screen and (max-width: 1170px) {
+    #footer__link-box {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+    .footer__link-box-item {
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 884px) {
+    #nav-menu {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .note {
+        font-size: 10px;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #iframe {
+        width: 295px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 408px) {
+    .title {
+        font-size: 30px;
+        padding: 20px 0;
+    }
+}
+
+/* Media queries */

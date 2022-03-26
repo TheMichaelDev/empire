@@ -1,0 +1,258 @@
+@font-face {
+    font-family: "Comfortaa";
+    font-display: swap;
+    src: local("Comfortaa"),
+         url("../fonts/Comfortaa.woff") format("woff"), 
+         url("../fonts/Comfortaa.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Comfortaa-B";
+    font-display: swap;
+    src: local("Comfortaa"),
+         url("../fonts/Comfortaa-Bold.woff") format("woff"), 
+         url("../fonts/Comfortaa-Bold.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background-color: #808080;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.5em;
+    background-color: #151719;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Header styles */
+
+#header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #151719;
+}
+
+#nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-menu__item {
+    display: block;
+    font-family: "Comfortaa";
+    font-size: 20px;
+    padding: 20px 50px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    transition: .25s ease;
+}
+
+.nav-menu__item:hover {
+    background-color: #2c3036;
+    transition: .25s ease;
+}
+
+/* Header styles */
+
+
+/* Main styles */
+
+.form {
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+    width: 100%;
+    max-width: 25%;
+    min-width: 400px;
+    height: 500px;
+    margin: 80px auto;
+    padding: 65px 100px;
+    font-family: "Comfortaa";
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.6em;
+    border: 3px solid #fff;
+    border-radius: 10px;
+}
+
+.form * {
+    outline: none;
+    border-radius: 5px;
+}
+
+.form__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form__title {
+    align-self: center;
+    text-align: center;
+    font-size: 32px;
+}
+
+.form__label {
+    padding-bottom: 3px;
+}
+
+.form__input {
+    height: 2em;
+    font-family: "Comfortaa";
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.6em;
+    padding-left: 10px;
+}
+
+.form__textarea {
+    font-family: "Comfortaa";
+    font-weight: bold;
+    padding: 10px;
+    resize: none;
+}
+
+.form__button {
+    box-sizing: content-box;
+    color: #151719;
+    font-family: "Comfortaa";
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #21c421;
+    border: 2px solid #000;
+    padding: 10px;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.form__button:active {
+    background-color: #006400;
+    color: #fff;
+    font-weight: normal;
+}
+
+/* Main styles */
+
+
+/* Footer styles */
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #151719;
+}
+
+#footer__link-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "Comfortaa";
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.footer__link-box-item {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 0 10px;
+    transition: .25s ease-in-out;
+}
+
+.footer__link-box-item:hover {
+    color: #f3c82e;
+    transition: .25s ease-in-out;
+}
+
+.footer__link-box-item:last-child {
+    margin-right: 0;
+}
+
+#footer__arp-box {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+#footer__arp-logo {
+    filter: grayscale(100%);
+    width: 100%;
+    transition: .25s ease-in-out;
+}
+
+#footer__arp-logo:hover {
+    filter: none;
+    transition: .25s ease-in-out;
+}
+
+/* Footer styles */
+
+
+/* Media queries */
+
+@media screen and (max-width: 1170px) {
+    #footer__link-box {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+    .footer__link-box-item {
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 884px) {
+    #nav-menu {
+        flex-direction: column;
+    }
+    .form {
+        margin: 40px auto;
+    }
+}
+
+@media screen and (max-width: 726px) {
+    .form {
+        min-width: 240px;
+        font-size: 16px;
+        padding: 40px;
+    }
+    .form__title {
+        font-size: 25px;
+    }
+    .form__button {
+        font-size: 16px;
+    }
+    .form__input, .form__textarea {
+        font-size: 13px;
+    }
+}
+
+/* Media queries */
